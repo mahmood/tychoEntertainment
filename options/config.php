@@ -93,7 +93,7 @@
         // Choose an priority for the admin bar menu
         'global_variable'      => '',
         // Set a different name for your global variable other than the opt_name
-        'dev_mode'             => true,
+        'dev_mode'             => false,
         // Show the time the page took to load, etc
         'update_notice'        => true,
         // If dev_mode is enabled, will notify developer of updated versions available in the GitHub Repo
@@ -238,11 +238,24 @@
                 'default'  => 'We are LA’s premier provider of entertainment & event services'
             ),
             array(
-                'id'=>'services',
-                'type' => 'multi_text',
-                'title' => __('Services', 'redux-framework-demo'),
+                'id'       => 'services',
+                'type'     => 'multi_text',
+                'title'    => __('Services', 'redux-framework-demo'),
                 'subtitle' => __('Enter your Services', 'redux-framework-demo'),
             ),
+            array(
+                'id'       => 'customer_name',
+                'type'     => 'Text',
+                'title'    => __('Customer Name', 'redux-framework-demo'),
+                'subtitle' => __("Enter your customer's name", 'redux-framework-demo'),
+            ),
+            array(
+                'id'       => 'customer_comment',
+                'type'     => 'Textarea',
+                'title'    => __('Customer Comment', 'redux-framework-demo'),
+                'subtitle' => __("Enter your customer's comment", 'redux-framework-demo'),
+            ),
+            
         )
     ) );
 
