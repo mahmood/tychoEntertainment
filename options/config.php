@@ -248,14 +248,31 @@
                 'type'     => 'Text',
                 'title'    => __('Customer Name', 'redux-framework-demo'),
                 'subtitle' => __("Enter your customer's name", 'redux-framework-demo'),
+                'default'  => 'Event Eleven'
             ),
             array(
                 'id'       => 'customer_comment',
                 'type'     => 'Textarea',
                 'title'    => __('Customer Comment', 'redux-framework-demo'),
                 'subtitle' => __("Enter your customer's comment", 'redux-framework-demo'),
+                'default'  => 'Weve worked with Tycho for the past 7 years on many events. Most notably, the SAG Awards Gala and they have always over delivered. No job is too small and always with a smile'
             ),
-            
+            array(
+                'id'       => 'about_title',
+                'type'     => 'Text',
+                'title'    => __('About title', 'redux-framework-demo'),
+                'subtitle' => __("Enter about section itle", 'redux-framework-demo'),
+                'default'  => 'Your Full-Service Entertainment and Event Partner'
+            ),
+            array(
+                'id'       => 'about',
+                'type'     => 'Textarea',
+                'title'    => __('Avout description', 'redux-framework-demo'),
+                'subtitle' => __("Enter aboutn section description", 'redux-framework-demo'),
+                'default'  => 'Our team of staffers and cleaners seamlessly execute best-in-class events while you produce and direct. Our team is trained in best-practices and committed to pre, during, and post event excellence.
+
+From bartenders and security to cleaners and hostesses, Tycho Entertainment offers a full-suite of professional and detail-oriented staffing resources for any size event.',           
+            ),
         )
     ) );
 
