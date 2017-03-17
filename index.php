@@ -2,50 +2,8 @@
 
 get_template_part('templates/trusted');
 get_template_part('templates/about');
+get_template_part('templates/event_services');
  ?>
-<section id="event">
-  <div class="container">
-    <div class="columns">
-      <div class="event__box column is-half is-offset-3">
-        <h2 class="title has-text-right">Event Services</h2>
-        <div class="event__box__item tile is-ancestor">
-          <div class="event__box__item__number tile is-4 is-vertical is-parent">
-            <div class="tile is-child has-text-centered">1</div>
-          </div>
-          <div class="event__box__item__desc tile is-parent">
-            <div class="tile is-child">
-              <h2 class="title">Pre-Event</h2>
-              <p>We assist your production team or event coordinators with all aspects needed to set up the party on-time.</p>
-            </div>
-          </div>
-        </div>
-        <div class="event__box__item tile is-ancestor">
-          <div class="event__box__item__number tile is-4 is-vertical is-parent">
-            <div class="tile is-child has-text-centered">2</div>
-          </div>
-          <div class="event__box__item__desc tile is-parent">
-            <div class="tile is-child">
-              <h2 class="title">During Event</h2>
-              <p>Here to assist in the logistics of keeping your party running smooth. Our event staffers are here to make your
-                life easy.</p>
-            </div>
-          </div>
-        </div>
-        <div class="event__box__item tile is-ancestor">
-          <div class="event__box__item__number tile is-4 is-vertical is-parent">
-            <div class="tile is-child has-text-centered">3</div>
-          </div>
-          <div class="event__box__item__desc tile is-parent">
-            <div class="tile is-child">
-              <h2 class="title">Post-event cleanup</h2>
-              <p>From breakdown to final clean, your event will end like nobody was ever here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="stafing">
   <div class="container has-text-centered stafing__title">
     <h2 class="title">Event Staffing</h2>
