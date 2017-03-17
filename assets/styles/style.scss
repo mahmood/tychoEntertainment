@@ -99,6 +99,16 @@ header {
 			background-repeat: no-repeat;
 		}
 		.header__nav {
+				.requestNav {
+					i {
+						display: inline-block;
+						position: relative;
+						left: 2rem;
+						top: 2px;
+						color: $white;
+						font-size: ms(1, .8rem);
+					}
+				}			
 			ul {
 				padding: 0 !important;
 				li {
@@ -119,16 +129,6 @@ header {
 						&:hover {
 							color: darken($white, 10%)
 						}
-					}
-				}
-				.requestNav {
-					i {
-						display: inline-block;
-						position: relative;
-						left: 2rem;
-						top: 2px;
-						color: $white;
-						font-size: ms(1, .8rem);
 					}
 				}
 			}
@@ -297,7 +297,7 @@ header {
 				background: $white;
 			}
 			&::before {
-				left: 5px;
+				left: 6px;
 				top: 18px;
 				@include transform(rotate(45deg));
 			}
@@ -437,6 +437,7 @@ header {
 			z-index: 11;
 		}
 		&__button {
+			margin-top: 1.5rem;
 			i {
 				display: inline-block;
 				position: relative;
@@ -737,6 +738,7 @@ header {
 	}
 }
 
+	
 .btn {
 	position: relative;
 	left: -1.3rem;
@@ -764,6 +766,11 @@ header {
 			color: $white;
 		}
 	}
+}
+
+.btn__menu{
+	@extend .btn;
+	top: 1.6rem;
 }
 
 footer {

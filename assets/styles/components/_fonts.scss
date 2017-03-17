@@ -2,15 +2,15 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Teko:500');
 @include font-face($icon-font, './assets/fonts/#{$icon-font}');
-@include font-face($Futura, './assets/#{$Futura}');
-@include font-face($Avenir, './assets/#{$Avenir}');
-@include font-face($LucidaGrande, './assets/#{$LucidaGrande}');
-@include font-face($Avenir, './assets/#{$Avenir}-Medium', 500);
-@include font-face($Avenir, './assets/#{$Avenir}-Heavy', 900);
-@include font-face(#{$Avenir}-BlackOblique, './assets/#{$Avenir}-BlackOblique', 900, 'oblique');
-@include font-face(#{$Avenir}-Black, './assets/#{$Avenir}-Black', 900);
-@include font-face(#{$Avenir}-Roman, './assets/#{$Avenir}-Roman', normal);
-@include font-face(#{$Avenir}-Book, './assets/#{$Avenir}-Book', normal);
+@include font-face($Futura, './assets/fonts/#{$Futura}');
+@include font-face($Avenir, './assets/fonts/#{$Avenir}');
+@include font-face($LucidaGrande, './assets/fonts/#{$LucidaGrande}');
+@include font-face($Avenir, './assets/fonts/#{$Avenir}-Medium', 500);
+@include font-face($Avenir, './assets/fonts/#{$Avenir}-Heavy', 900);
+@include font-face(#{$Avenir}-BlackOblique, './assets/fonts/#{$Avenir}-BlackOblique', 900, 'oblique');
+@include font-face(#{$Avenir}-Black, './assets/fonts/#{$Avenir}-Black', 900);
+@include font-face(#{$Avenir}-Roman, './assets/fonts/#{$Avenir}-Roman', normal);
+@include font-face(#{$Avenir}-Book, './assets/fonts/#{$Avenir}-Book', normal);
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

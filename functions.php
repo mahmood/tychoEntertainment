@@ -8,3 +8,14 @@ if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/R
 if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/options/config.php' ) ) {
     require_once( dirname( __FILE__ ) . '/options/config.php' );
 }
+
+add_theme_support( 'menus' );
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
