@@ -589,7 +589,7 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
      * */
     if ( ! function_exists( 'change_arguments' ) ) {
         function change_arguments( $args ) {
-            //$args['dev_mode'] = true;
+            $args['dev_mode'] = true;
 
             return $args;
         }

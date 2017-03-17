@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 
 // Sass task
 gulp.task('styles', function () {
-	return gulp.src('./assets/styles/style.scss')
+	return gulp.src('./assets/styles/main.scss')
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(autoprefixer('last 2 version', 'ie 10'))
 		.pipe(gulp.dest('./'))
