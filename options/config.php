@@ -277,15 +277,51 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
     ) );
 
     Redux::setSection( $opt_name, array(
-        'title'            => __( 'Checkbox', 'redux-framework-demo' ),
-        'id'               => 'basic-checkbox',
+        'title'            => __( 'Event Services', 'redux-framework-demo' ),
+        'id'               => 'event-services',
         'subsection'       => false,
         'fields'           => array(
             array (
-                'id'       => 'text',
+                'id'       => 'event-1-title',
                 'type'     => 'Text',
-                'title'    => __( 'Text', 'redux-framework-demo' ),
-                'subtitle' => __( 'describe this option', 'redux-framework-demo' ),
+                'title'    => __( '#1 title', 'redux-framework-demo' ),
+                'subtitle' => __( '#1 title', 'redux-framework-demo' ),
+                'default'  => 'PRE-EVENT'
+            ),
+            array (
+                'id'       => 'event-1-des',
+                'type'     => 'Textarea',
+                'title'    => __( '#1 description', 'redux-framework-demo' ),
+                'subtitle' => __( '#1 description', 'redux-framework-demo' ),
+                'default'  => 'We assist your production team or event coordinators with all aspects needed to set up the party on-time.'                
+            ),
+            array (
+                'id'       => 'event-2-title',
+                'type'     => 'Text',
+                'title'    => __( '#2 title', 'redux-framework-demo' ),
+                'subtitle' => __( '#2 title', 'redux-framework-demo' ),
+                'default'  => 'DURING EVENT'                
+            ),
+            array (
+                'id'       => 'event-2-des',
+                'type'     => 'Textarea',
+                'title'    => __( '#2 description', 'redux-framework-demo' ),
+                'subtitle' => __( '#2 description', 'redux-framework-demo' ),
+                'default'  => 'Here to assist in the logistics of keeping your party running smooth. Our event staffers are here to make your life easy.'
+            ),
+            array (
+                'id'       => 'event-3-title',
+                'type'     => 'Text',
+                'title'    => __( '#3 title', 'redux-framework-demo' ),
+                'subtitle' => __( '#3 title', 'redux-framework-demo' ),
+                'default'  => 'POST-EVENT CLEANUP'
+            ),
+            array (
+                'id'       => 'event-3-des',
+                'type'     => 'Textarea',
+                'title'    => __( '#3 description', 'redux-framework-demo' ),
+                'subtitle' => __( '#3 description', 'redux-framework-demo' ),
+                'default'  => 'From breakdown to final clean, your event will end like nobody was ever here.'
             ),
         )
     ) );
