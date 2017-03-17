@@ -1,0 +1,17 @@
+@function context-calc($scale, $base) {
+	@return ($scale/$base);
+}
+@function measure-margin($scale, $measure, $value) {
+	$pixelValue: $measure/$scale;
+	$remValue: $pixelValue * $font-base;
+	@if $value == rem {
+		@return $pixelValue#{$value};
+	} @else if $value == em {
+		@return ($remValue/$scale)#{$value};
+	} @else {
+		@return $remValue#{$value};
+	}
+}
+@function get-col-percent($column-num) {
+	@return $column-num / $columns * 100%;
+}

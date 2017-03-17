@@ -1,0 +1,86 @@
+@mixin font-face($family,$src,$weight: normal,$style: normal) {
+    @font-face {
+        font-family : $family;
+        src         : url('#{$src}.woff') format('woff'),
+                      url('#{$src}.ttf') format('truetype');
+        font-style  : $style;
+        font-weight : $weight;
+    }
+}
+@mixin font-icon($family,$src,$weight: normal,$style: normal) {
+    @font-face {
+        font-family : $family;
+        src         : url('#{$src}.eot?5k8cdw');
+        src         : url('#{$src}.eot?#iefix5k8cdw') format('embedded-opentype'),
+                      url('#{$src}.woff?5k8cdw') format('woff'),
+                      url('#{$src}.ttf?5k8cdw') format('truetype'),
+                      url('#{$src}.svg?5k8cdw#zigorat') format('svg');
+        font-style  : $style;
+        font-weight : $weight;
+    }
+}
+@mixin type-scale($scale, $base, $value, $measure:"") {
+	@if $value == rem {
+		//font-size: $scale#{px};
+		font-size: context-calc($scale, $base)#{'rem'};
+	} @else if $value == em {
+		font-size: context-calc($scale, $base)#{'em'};
+	} @else {
+		font-size: $scale#{px};
+	}
+	@if $measure != "" {
+		@if $value == rem {
+			margin-bottom: measure-margin($scale, $measure, $value: px);
+		} @else if $value == em {
+			margin-bottom: measure-margin($scale, $measure, $value: em);
+		} @else {
+			margin-bottom: measure-margin($scale, $measure, $value);
+		}
+	}
+}
+@mixin heading-scale() {
+	@each $name, $size in $typo-scale {
+		.#{$name} {
+			@extend %typoHeading;
+			@include type-scale(
+				$size, $font-base, #{$typescale-unit}, $typo-measure
+			);
+		}
+	}
+}
+@mixin headings() {
+	@each $h, $size in $typo-headings {
+		#{$h} {
+			@extend .#{$size};
+		}
+	}
+}
+@mixin border-radius($number) {
+    -webkit-border-radius : $number;
+    -moz-border-radius    : $number;
+    -o-border-radius      : $number;
+    border-radius         : $number;
+}
+@mixin transform($transform){
+    -webkit-transform     : $transform;
+    -moz-transform        : $transform;
+    -ms-transform         : $transform;
+    -o-transform          : $transform;
+    transform             : $transform;
+}
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing    : antialiased;
+        -moz-osx-font-smoothing   : grayscale;
+    }
+    @else {
+        -webkit-font-smoothing    : subpixel-antialiased;
+        -moz-osx-font-smoothing   : auto;
+    }
+}
+@mixin createTypo($style, $stretch, $height, $spacing) {
+    font-style: $style;
+    font-stretch: $stretch;
+    line-height: $height;
+    letter-spacing: $spacing;
+}

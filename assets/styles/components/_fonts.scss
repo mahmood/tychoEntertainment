@@ -1,0 +1,86 @@
+// @import url('https://fonts.googleapis.com/css?family=Lato');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Teko:500');
+@include font-face($icon-font, './assets/fonts/#{$icon-font}');
+@include font-face($Futura, './assets/#{$Futura}');
+@include font-face($Avenir, './assets/#{$Avenir}');
+@include font-face($LucidaGrande, './assets/#{$LucidaGrande}');
+@include font-face($Avenir, './assets/#{$Avenir}-Medium', 500);
+@include font-face($Avenir, './assets/#{$Avenir}-Heavy', 900);
+@include font-face(#{$Avenir}-BlackOblique, './assets/#{$Avenir}-BlackOblique', 900, 'oblique');
+@include font-face(#{$Avenir}-Black, './assets/#{$Avenir}-Black', 900);
+@include font-face(#{$Avenir}-Roman, './assets/#{$Avenir}-Roman', normal);
+@include font-face(#{$Avenir}-Book, './assets/#{$Avenir}-Book', normal);
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $icon-font !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.txt-center {
+  text-align: center;
+}
+%txt-center {
+  text-align: center;
+}
+%font-futura {
+  font-family: $Futura;
+}
+%font-book {
+  font-family: 'Avenir-Book';
+  font-weight: normal;
+}
+%font-roman {
+  font-family: 'Avenir-Roman';
+  font-weight: normal;
+}
+%font-black {
+  font-family: 'Avenir-Black';
+  font-weight: 900;
+}
+%font-normal {
+  font-weight: 300;
+}
+%font-medium {
+  font-weight: 500;
+}
+%font-heavy {
+  font-weight: 900;
+}
+%font-BlackOblique {
+  font-family: 'Avenir-BlackOblique';
+  font-weight: 900;
+  font-style: oblique;
+}
+
+.icon-circle-plus:before {
+  content: "\e902";
+}
+.icon-logo-white-faded:before {
+  content: "\e90f";
+}
+.icon-logo-orange:before {
+  content: "\e910";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-linked-in:before {
+  content: "\e908";
+}
+.icon-pinterest:before {
+  content: "\e90b";
+}
+.icon-twitter:before {
+  content: "\e90e";
+}

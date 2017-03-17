@@ -1,0 +1,184 @@
+// popup
+/* Outer */
+.popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.75);
+	z-index: 9999;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	&-inner {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+    background-color: $white;
+		&__box {
+			display: block;
+			position: relative;
+			padding: 2rem;
+			.title {
+				display: inline-block;
+				margin: 2rem auto;
+				border-bottom: 2px solid #30353b;
+				padding: .5rem 0;
+				text-transform: uppercase;
+				color: #31353b;
+				font-family: 'Avenir';
+				font-weight: 300;
+				font-size: ms(1, 1.2rem);
+				@include createTypo(
+					normal,
+					normal,
+					normal,
+					0.3px
+				);
+			}
+			p {
+				color: #31353b;
+				font-family: 'Avenir';
+				font-size: ms(0, 1rem);
+				font-weight: 300;
+				@include createTypo(
+					normal,
+					normal,
+					normal,
+					0.2px
+				);
+			}
+			&__form {
+				display: block;
+				position: relative;
+				top: 2rem;
+				.input {
+					border: 0.5px solid #6a6a6a !important;
+					height: auto !important;
+					padding: 1rem 1.5rem 1rem 1.5rem;
+				}
+				.button {
+					background: #30353b;
+					border: 0.5px solid #6a6a6a !important;
+					height: auto !important;
+					padding: 1rem 2rem;
+					width: 100%;
+					color: $white;
+					font-family: 'Avenir';
+					font-size: ms(0, 1rem);
+					font-weight: 300;
+					@include createTypo(
+						normal,
+						normal,
+						normal,
+						0.2px
+					);
+					text-transform: uppercase;
+				}
+			}
+		}
+		&__success {
+			display: none;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			vertical-align: middle;
+			.control {
+				display: block;
+				position: absolute;
+				width: 50%;
+				top: 50%;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				text-align: center;
+				@include transform(translateY(-50%));
+			}
+			&__white {
+				display: block;
+				position: absolute;
+				height: 50%;
+				width: 100%;
+				background-color: $white;
+				color: #31353b;
+				font-family: 'Avenir';
+				font-weight: 300;
+				@include createTypo(
+					normal,
+					normal,
+					normal,
+					0.3px
+				);
+				.title {
+					font-size: ms(1, 1.3rem);
+					text-transform: uppercase;
+				}
+				p {
+					font-size: ms(0, 1rem);
+				}
+			}
+			&__black {
+				display: block;
+				position: absolute;
+				height: 50%;
+				width: 100%;
+				background-color: #30353b;
+				color: $white;
+				top: 50%;
+				font-family: 'Avenir';
+				font-weight: 300;
+				@include createTypo(
+					normal,
+					normal,
+					normal,
+					0.3px
+				);
+				.title {
+					color: $white;
+					font-size: ms(1, 1.3rem);
+					text-transform: uppercase;
+				}
+				p {
+					width: 80%;
+					margin: 0 auto;
+					font-size: ms(0, 1rem);
+					line-height: 2.618;
+				}
+			}
+		}
+	}
+	&-close {
+		display: block;
+		position: absolute;
+		right: 2rem;
+		top: 2rem;
+		opacity: .65;
+		height: 2rem;
+		// width: 2rem;
+		&::after, &::before {
+			display: inline-block;
+			position: relative;
+			content: '';
+			background-color: $black;
+			width: 30px;
+			height: 2px;
+			@include border-radius(3px);
+		}
+		&::after {
+			@include transform(rotate(45deg));
+			right: 1rem;
+		}
+		&::before {
+			@include transform(rotate(-45deg));
+			left: 15px;
+			top: 0px;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
