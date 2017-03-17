@@ -280,6 +280,7 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
         'title'            => __( 'Event Services', 'redux-framework-demo' ),
         'id'               => 'event-services',
         'subsection'       => false,
+        'icon'             => 'el el-fire',        
         'fields'           => array(
             array (
                 'id'       => 'event-1-title',
@@ -325,6 +326,134 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
             ),
         )
     ) );
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Event Staffing', 'redux-framework-demo' ),
+        'id'               => 'event-staffing',
+        'subsection'       => false,
+        'icon'             => 'el el-leaf',        
+        'fields'           => array(
+            array (
+                'id'       => 'event-stafing-des',
+                'type'     => 'Textarea',
+                'title'    => __( 'Description', 'redux-framework-demo' ),
+                'subtitle' => __( 'Enter Event Staffing Description', 'redux-framework-demo' ),
+                'default'  => 'We bring you our expert team of professionals who work to keep your events clean, refreshed, and running smoothly.'
+            ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
+        'title'            => __( 'Contact information', 'redux-framework-demo' ),
+        'id'               => 'contact',
+        'icon'             => 'el el-phone',
+        'subsection'       => false,
+        'fields'           => array(
+            array (
+                'id'       => 'tel',
+                'type'     => 'Text',
+                'title'    => __( 'Telphone', 'redux-framework-demo' ),
+                'subtitle' => __( 'Enter telphone number', 'redux-framework-demo' ),
+                'default'  => '818.840.9404'
+            ),
+            array (
+                'id'       => 'address',
+                'type'     => 'Text',
+                'title'    => __( 'Address', 'redux-framework-demo' ),
+                'subtitle' => __( 'Enter address', 'redux-framework-demo' ),
+                'default'  => '3906 W. Burbank Blvd., Burbank, CA 91506'
+            ),
+            
+        )
+    ) );
+
+     Redux::setSection( $opt_name, array(
+        'title'            => __( 'Who We Are', 'redux-framework-demo' ),
+        'id'               => 'who-we-are',
+        'icon'             => 'el el-network',                
+        'subsection'       => false,
+        'fields'           => array(
+            array (
+                'id'       => 'who-1-title',
+                'type'     => 'Text',
+                'title'    => __( '#1 title', 'redux-framework-demo' ),
+                'subtitle' => __( '#1 title', 'redux-framework-demo' ),
+                'default'  => 'people'
+            ),
+            array (
+                'id'       => 'who-1-des',
+                'type'     => 'Textarea',
+                'title'    => __( '#1 description', 'redux-framework-demo' ),
+                'subtitle' => __( '#1 description', 'redux-framework-demo' ),
+                'default'  => 'We work hard to provide the best people to power your event needs. Tycho Entertainment staffers are trained in event management and execution best-practices. We take pride in working behind the scenes to create the experience you imagined for you and your guest.'                
+            ),
+            array (
+                'id'       => 'who-2-title',
+                'type'     => 'Text',
+                'title'    => __( '#2 title', 'redux-framework-demo' ),
+                'subtitle' => __( '#2 title', 'redux-framework-demo' ),
+                'default'  => 'values'                
+            ),
+            array (
+                'id'       => 'who-2-des',
+                'type'     => 'Textarea',
+                'title'    => __( '#2 description', 'redux-framework-demo' ),
+                'subtitle' => __( '#2 description', 'redux-framework-demo' ),
+                'default'  => 'We believe in professionalism at every point of contact with our clients. With attention to detail at the cornerstone of our practice, we make managing your event frictionless and delightful. “At Your Service” is the philosophy of how we do business.'
+            ),
+            array (
+                'id'       => 'who-3-title',
+                'type'     => 'Text',
+                'title'    => __( '#3 title', 'redux-framework-demo' ),
+                'subtitle' => __( '#3 title', 'redux-framework-demo' ),
+                'default'  => 'vision'
+            ),
+            array (
+                'id'       => 'who-3-des',
+                'type'     => 'Textarea',
+                'title'    => __( '#3 description', 'redux-framework-demo' ),
+                'subtitle' => __( '#3 description', 'redux-framework-demo' ),
+                'default'  => 'At Tycho Entertainment, we view our clients as partners. Our relationship begins before your event and carries on through your next 10. We are committed to excellence and always “at your service.'
+            ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
+    'title' => __( 'Social', 'redux-framework-demo' ),
+    'id'    => 'main_social',
+    'desc'  => __( 'Social icon links', 'redux-framework-demo' ),
+    'icon'  => 'el el-twitter',
+    'fields' => array (
+        array(
+            'id'         => 'facebook',
+            'type'       => 'Text',
+            'section_id' => 'social_facebook',
+            'title'      => 'Facebook',
+            'subtitle'   => 'Enter facebook url'
+        ),
+        array(
+            'id'         => 'twitter',
+            'type'       => 'Text',
+            'section_id' => 'social_twitter',
+            'title'      => 'Twitter',
+            'subtitle'   => 'Enter twitter url'
+        ),
+        array(
+            'id'         => 'pinterest',
+            'type'       => 'Text',
+            'section_id' => 'social_pinterest',
+            'title'      => 'Pinterest',
+            'subtitle'   => 'Enter pinterest url'
+        ),
+        array(
+            'id'         => 'linkedin',
+            'type'       => 'Text',
+            'section_id' => 'social_linkedin',
+            'title'      => 'Linkedin',
+            'subtitle'   => 'Enter linkedin url'
+        ),
+    )
+) );
 
     if ( file_exists( dirname( __FILE__ ) . '/../README.md' ) ) {
         $section = array(
