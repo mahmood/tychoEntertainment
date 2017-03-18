@@ -46,21 +46,20 @@
           </div>
         </div>
         <div class="columns sticky__header is-hidden-desktop">
-          <div class="column is-4">
-            <div class="sticky__header__logo"></div>
-          </div>
           <div class="column">
-            <div class="is-pulled-right">
-              <button class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
-            </div>
+            <div class="sticky__header__logo"><i class="icon-logo-white-faded"></i></div>
+            <button class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           </div>
           <div class="toggleNav__trigger has-text-centered">
-            <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Staffing</a></li>
-              <li><a href="#">About</a></li>
-              <li class="requestNav btn"><i class="icon-circle-plus"></i><a href="#" data-popup-open="reqPopup">Request services</a></li>
-            </ul>
+            <div class="">
+                  <div class="requestNav btn__menu">
+                        <i class="icon-circle-plus"></i>
+                        <a href="#" data-popup-open="reqPopup">Request services</a>
+                    </div>
+              </div>
+              <div class="">
+                  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+              </div>
           </div>
         </div>
         <div class="popup" data-popup="reqPopup">

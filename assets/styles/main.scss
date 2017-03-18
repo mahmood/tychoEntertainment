@@ -49,6 +49,16 @@ div::-webkit-scrollbar {
 .columns:last-child {
 	margin-bottom: 0 !important;
 }
+.fixedHeader {
+	position: fixed !important;
+	width: 100%;
+	margin: 0 !important;
+	top: -70px;
+	left: 0 !important;
+	z-index: 9999;
+	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+	@include transform(translateY(100%));
+}
 header {
 	height: 700px;
 	.bg__overlay {
@@ -136,18 +146,36 @@ header {
 		}
 	}
 	.sticky__header {
+		height: 70px;
 		display: block;
 		position: relative;
 		background: rgba(255, 255, 255, .9);
 		padding: 0 2rem;
 		margin-top: 1.5rem;
+		-webkit-transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+		-moz-transition: -moz-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+		transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 		&__logo {
-			display: block;
-			width: 400px;
-  		height: 57px;
-			background: url('./assets/images/l-o-g-o-red@3x.png');
-			background-size: cover;
-			background-repeat: no-repeat;
+			display: inline-flex;
+			position: absolute;
+			width: 10rem;
+			height: 100%;
+			background: $black-light;
+			left: 0;
+			top: 0;
+			justify-content: center;
+			align-items: center;
+			i {
+				color: $white;
+				font-size: ms(1, 2.5rem);
+	
+			}
+		}
+		.hamburger {
+			position: absolute;
+			right: 2em;
+			top: 50%;
+			@include transform(translateY(-50%));
 		}
 		.toggleNav__trigger {
 			display: none;
@@ -565,18 +593,6 @@ header {
 		position: relative;
 		// width: 400px !important;
 		height: 200px;
-		&::after {
-			display: block;
-			content: '';
-			position: absolute;
-			width: 93%;
-			height: 100%;
-			left: 1rem;
-			top: 0;
-			opacity: 0.19;
-			// z-index: 11;
-			background: radial-gradient(circle at 48% 50%, #000000, rgba(0, 0, 0, 0.47));
-		}
 		img {
 			position: relative;
 			width: 100%;
@@ -584,7 +600,7 @@ header {
 		}
 		.title {
 			position: relative;
-			margin-top: -8rem;
+			margin: -8rem;
 			text-align: center;
 			font-family: 'Avenir';
 			font-size: ms(1, 1.2rem);
@@ -599,14 +615,19 @@ header {
 	.slick-slide {
 		position: relative;
 		top: 2rem;
-		transition: all .3s ease-out;
+		overflow: hidden !important;
+		@include border-radius(3px);
 	}
 	.slick-slide.slick-current {
 		top: 0rem;
-		width: 420px !important;
-		height: 250px !important;
+		@include transform(scaleY(1.6));
+		transition: transform .3s ease-out;
 		.title {
-			margin-top: -10rem;
+			margin-top: -7rem;
+			@include transform(scaleY(0.6));
+		}
+		img {
+			@include transform(scaleY(.8) translateY(1.5rem));
 		}
 	}
 }

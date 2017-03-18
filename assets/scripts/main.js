@@ -51,14 +51,15 @@ $(document).ready(function(){
       $toggleNav.slideToggle();
     });
   });
-  //
-  // $(function () {
-  //   var el = $('.intro').height();
-  //   var $window = $(window);
-  //   var fixedHeader = $('.second--header');
-  //   $window.on('scroll', function() {
-  //     var scrollTop = $window.scrollTop();
-  //     fixedHeader.toggleClass('fixedHeader', scrollTop >= el);
-  //   });
-  // });
+  // toggle sticky menu when scroll more than header height
+  $(function () {
+    var el = $('.hero').height();
+    var $window = $(window);
+    var fixedHeader = $('.sticky__header');
+    $window.on('scroll', function() {
+      var scrollTop = $window.scrollTop();
+      fixedHeader.toggleClass('fixedHeader', scrollTop >= el);
+    });
+  });
 });
+
