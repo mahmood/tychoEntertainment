@@ -51,15 +51,13 @@
             <button class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           </div>
           <div class="toggleNav__trigger has-text-centered">
-            <div class="">
-                  <div class="requestNav btn__menu">
+                 <div>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                </div>
+                <div class="requestNav mobile-req btn__menu">
                         <i class="icon-circle-plus"></i>
                         <a href="#" data-popup-open="reqPopup">Request services</a>
-                    </div>
-              </div>
-              <div class="">
-                  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-              </div>
+                </div>
           </div>
         </div>
         <div class="popup" data-popup="reqPopup">
