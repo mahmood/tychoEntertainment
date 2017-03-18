@@ -232,7 +232,7 @@
         'fields'           => array(
             array(
                 'id'       => 'motto',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( 'Motto', 'redux-framework-demo' ),
                 'subtitle' => __( 'Enter your Motto', 'redux-framework-demo' ),
                 'default'  => 'We are LA’s premier provider of entertainment & event services'
@@ -245,28 +245,28 @@
             ),
             array(
                 'id'       => 'customer_name',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __('Customer Name', 'redux-framework-demo'),
                 'subtitle' => __("Enter your customer's name", 'redux-framework-demo'),
                 'default'  => 'Event Eleven'
             ),
             array(
                 'id'       => 'customer_comment',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __('Customer Comment', 'redux-framework-demo'),
                 'subtitle' => __("Enter your customer's comment", 'redux-framework-demo'),
                 'default'  => 'Weve worked with Tycho for the past 7 years on many events. Most notably, the SAG Awards Gala and they have always over delivered. No job is too small and always with a smile'
             ),
             array(
                 'id'       => 'about_title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __('About title', 'redux-framework-demo'),
                 'subtitle' => __("Enter about section itle", 'redux-framework-demo'),
                 'default'  => 'Your Full-Service Entertainment and Event Partner'
             ),
             array(
                 'id'       => 'about',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __('Avout description', 'redux-framework-demo'),
                 'subtitle' => __("Enter aboutn section description", 'redux-framework-demo'),
                 'default'  => 'Our team of staffers and cleaners seamlessly execute best-in-class events while you produce and direct. Our team is trained in best-practices and committed to pre, during, and post event excellence.
@@ -284,42 +284,42 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
         'fields'           => array(
             array (
                 'id'       => 'event-1-title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( '#1 title', 'redux-framework-demo' ),
                 'subtitle' => __( '#1 title', 'redux-framework-demo' ),
                 'default'  => 'PRE-EVENT'
             ),
             array (
                 'id'       => 'event-1-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( '#1 description', 'redux-framework-demo' ),
                 'subtitle' => __( '#1 description', 'redux-framework-demo' ),
                 'default'  => 'We assist your production team or event coordinators with all aspects needed to set up the party on-time.'                
             ),
             array (
                 'id'       => 'event-2-title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( '#2 title', 'redux-framework-demo' ),
                 'subtitle' => __( '#2 title', 'redux-framework-demo' ),
                 'default'  => 'DURING EVENT'                
             ),
             array (
                 'id'       => 'event-2-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( '#2 description', 'redux-framework-demo' ),
                 'subtitle' => __( '#2 description', 'redux-framework-demo' ),
                 'default'  => 'Here to assist in the logistics of keeping your party running smooth. Our event staffers are here to make your life easy.'
             ),
             array (
                 'id'       => 'event-3-title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( '#3 title', 'redux-framework-demo' ),
                 'subtitle' => __( '#3 title', 'redux-framework-demo' ),
                 'default'  => 'POST-EVENT CLEANUP'
             ),
             array (
                 'id'       => 'event-3-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( '#3 description', 'redux-framework-demo' ),
                 'subtitle' => __( '#3 description', 'redux-framework-demo' ),
                 'default'  => 'From breakdown to final clean, your event will end like nobody was ever here.'
@@ -335,7 +335,7 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
         'fields'           => array(
             array (
                 'id'       => 'event-stafing-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( 'Description', 'redux-framework-demo' ),
                 'subtitle' => __( 'Enter Event Staffing Description', 'redux-framework-demo' ),
                 'default'  => 'We bring you our expert team of professionals who work to keep your events clean, refreshed, and running smoothly.'
@@ -351,14 +351,14 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
         'fields'           => array(
             array (
                 'id'       => 'tel',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( 'Telphone', 'redux-framework-demo' ),
                 'subtitle' => __( 'Enter telphone number', 'redux-framework-demo' ),
                 'default'  => '818.840.9404'
             ),
             array (
                 'id'       => 'address',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( 'Address', 'redux-framework-demo' ),
                 'subtitle' => __( 'Enter address', 'redux-framework-demo' ),
                 'default'  => '3906 W. Burbank Blvd., Burbank, CA 91506'
@@ -375,42 +375,42 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
         'fields'           => array(
             array (
                 'id'       => 'who-1-title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( '#1 title', 'redux-framework-demo' ),
                 'subtitle' => __( '#1 title', 'redux-framework-demo' ),
                 'default'  => 'people'
             ),
             array (
                 'id'       => 'who-1-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( '#1 description', 'redux-framework-demo' ),
                 'subtitle' => __( '#1 description', 'redux-framework-demo' ),
                 'default'  => 'We work hard to provide the best people to power your event needs. Tycho Entertainment staffers are trained in event management and execution best-practices. We take pride in working behind the scenes to create the experience you imagined for you and your guest.'                
             ),
             array (
                 'id'       => 'who-2-title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( '#2 title', 'redux-framework-demo' ),
                 'subtitle' => __( '#2 title', 'redux-framework-demo' ),
                 'default'  => 'values'                
             ),
             array (
                 'id'       => 'who-2-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( '#2 description', 'redux-framework-demo' ),
                 'subtitle' => __( '#2 description', 'redux-framework-demo' ),
                 'default'  => 'We believe in professionalism at every point of contact with our clients. With attention to detail at the cornerstone of our practice, we make managing your event frictionless and delightful. “At Your Service” is the philosophy of how we do business.'
             ),
             array (
                 'id'       => 'who-3-title',
-                'type'     => 'Text',
+                'type'     => 'text',
                 'title'    => __( '#3 title', 'redux-framework-demo' ),
                 'subtitle' => __( '#3 title', 'redux-framework-demo' ),
                 'default'  => 'vision'
             ),
             array (
                 'id'       => 'who-3-des',
-                'type'     => 'Textarea',
+                'type'     => 'textarea',
                 'title'    => __( '#3 description', 'redux-framework-demo' ),
                 'subtitle' => __( '#3 description', 'redux-framework-demo' ),
                 'default'  => 'At Tycho Entertainment, we view our clients as partners. Our relationship begins before your event and carries on through your next 10. We are committed to excellence and always “at your service.'
@@ -426,28 +426,28 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
     'fields' => array (
         array(
             'id'         => 'facebook',
-            'type'       => 'Text',
+            'type'       => 'text',
             'section_id' => 'social_facebook',
             'title'      => 'Facebook',
             'subtitle'   => 'Enter facebook url'
         ),
         array(
             'id'         => 'twitter',
-            'type'       => 'Text',
+            'type'       => 'text',
             'section_id' => 'social_twitter',
             'title'      => 'Twitter',
             'subtitle'   => 'Enter twitter url'
         ),
         array(
             'id'         => 'pinterest',
-            'type'       => 'Text',
+            'type'       => 'text',
             'section_id' => 'social_pinterest',
             'title'      => 'Pinterest',
             'subtitle'   => 'Enter pinterest url'
         ),
         array(
             'id'         => 'linkedin',
-            'type'       => 'Text',
+            'type'       => 'text',
             'section_id' => 'social_linkedin',
             'title'      => 'Linkedin',
             'subtitle'   => 'Enter linkedin url'

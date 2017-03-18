@@ -68,29 +68,9 @@
                   <h2 class="title">Request New Services</h2>
                   <p>Fill out your details below and one of our specialists will get back to you in 1-3 business days.</p>
                   <div class="popup-inner__box__form">
-                    <form id="reqServices">
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Your Name">
-                      </p>
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Organization Name">
-                      </p>
-                      <p class="control">
-                        <input class="input" type="email" placeholder="Email Address">
-                      </p>
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Phone Number">
-                      </p>
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Event location?">
-                      </p>
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Number of guests?">
-                      </p>
-                      <p class="control">
-                        <input class="button" type="submit" value="Submit New Event Services Request">
-                      </p>
-                    </form>
+                    <div id="reqServices">
+                    <?= do_shortcode('[contact-form-7 id="64" title="Request-service-ent"]'); ?>
+                    </div>
                   </div>
                 </div>
                 <div class="popup-inner__success">
@@ -104,7 +84,7 @@
                     <div class="control">
                       <h2 class="title">Need VIP Attention?</h2>
                       <p>High Profile accounts are handled confidentially by private account managers.</p>
-                      <p>To schedule an assessment call our Consierge Services desk at 818.840.9404 Monday - Friday: 9am - 5pm.</p>
+                      <p>To schedule an assessment call our Consierge Services desk at <?= $tel ?> Monday - Friday: 9am - 5pm.</p>
                     </div>
                   </div>
                 </div>

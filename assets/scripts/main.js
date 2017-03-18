@@ -15,10 +15,10 @@ $(document).ready(function(){
       e.preventDefault();
     });
   });
-  $('#reqServices').submit(function(e) {
+  //hide form after send
+  $(".wpcf7").on('wpcf7:mailsent', function(event){
     $('.popup-inner__box').hide();
     $('.popup-inner__success').show();
-    e.preventDefault();
   });
   $('.stafing__items').slick({
     centerMode: true,

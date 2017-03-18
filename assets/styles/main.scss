@@ -844,6 +844,8 @@ footer {
 		top: 0px;
 	}
 }
+
+//custom css
 .mobile-req {
 	margin-bottom: 1.7rem;	
 	i{
@@ -852,4 +854,16 @@ footer {
 		top: 1px;
 		color: #fff;
 	}
+}
+
+.wpcf7-response-output{
+	border:none !important;
+	margin: 0!important;
+	padding: 0!important;
+}
+.wpcf7-validation-errors{
+	color: red!important;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border:none!important;
 }
