@@ -15,6 +15,21 @@ $(document).ready(function(){
       e.preventDefault();
     });
   });
+
+  // Scroll down event with [learn more] button
+  $(function() {
+  	$('a.learnMoreBtn').on('click', function(e) {
+      var el = $('.hero').height();
+      $("html, body").animate({
+        scrollTop:  el
+      }, 500, 'swing');
+  		// $('html, body').animate({
+      //   scrollTop: $(el).offset().top
+      // }, 500, 'linear');
+  		e.preventDefault();
+  	});
+  });
+
   //hide form after send
   $(".wpcf7").on('wpcf7:mailsent', function(event){
     $('.popup-inner__box').hide();
@@ -62,4 +77,3 @@ $(document).ready(function(){
     });
   });
 });
-

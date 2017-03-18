@@ -99,7 +99,7 @@
               <div class="column is-8 is-offset-2">
                   <ul>
                   <?php foreach($services as $service){ ?>
-                    <li><?= $service ?></li>                        
+                    <li><?= $service ?></li>
                   <?php } ?>
                 </ul>
               </div>
@@ -109,7 +109,8 @@
         <div class="hero-foot">
           <div class="columns has-text-centered">
             <div class="column">
-              <h4 class="title">Learn More</h4><i class="icon-more"></i>
+              <h4 class="title">Learn More</h4>
+              <a class="learnMoreBtn"><i class="icon-more"></i></a>
             </div>
           </div>
         </div>
