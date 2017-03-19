@@ -41,18 +41,156 @@ $(document).ready(function(){
     // fade: true,
     easing: 'linear',
     slidesToScroll: 1,
-    centerPadding: '60px',
+    centerPadding: '0px',
     slidesToShow: 3,
     autoplay: true,
     draggable: false,
     swipeToSlide: false,
     arrows: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     responsive: [
+      {
+        breakpoint: 1191,
+        settings: {
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          centerMode: true,
+          centerPadding: '330px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1050,
+        settings: {
+          centerMode: true,
+          centerPadding: '300px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 980,
+        settings: {
+          centerMode: true,
+          centerPadding: '280px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 930,
+        settings: {
+          centerMode: true,
+          centerPadding: '260px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          centerMode: true,
+          centerPadding: '240px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          centerMode: true,
+          centerPadding: '220px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          centerMode: true,
+          centerPadding: '200px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 790,
+        settings: {
+          centerMode: true,
+          centerPadding: '180px',
+          slidesToShow: 1
+        }
+      },
       {
         breakpoint: 768,
         settings: {
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '170px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 660,
+        settings: {
+          centerMode: true,
+          centerPadding: '150px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          centerMode: true,
+          centerPadding: '130px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          centerMode: true,
+          centerPadding: '110px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          centerMode: true,
+          centerPadding: '90px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 490,
+        settings: {
+          centerMode: true,
+          centerPadding: '70px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 460,
+        settings: {
+          centerMode: true,
+          centerPadding: '50px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 390,
+        settings: {
+          centerMode: true,
+          centerPadding: '30px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 340,
+        settings: {
+          centerMode: true,
+          centerPadding: '20px',
           slidesToShow: 1
         }
       }
