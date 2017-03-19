@@ -35,6 +35,12 @@ $(document).ready(function(){
     $('.popup-inner__box').hide();
     $('.popup-inner__success').show();
   });
+  //show form after successful 
+  $('#closeButton').on('click', function(event){
+    $('.popup-inner__success').hide();
+    $('.popup-inner__box').show();    
+  });
+
   $('.stafing__items').slick({
     centerMode: true,
     infinite: true,

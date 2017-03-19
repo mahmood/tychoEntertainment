@@ -89,7 +89,7 @@
                   </div>
                 </div>
               </div>
-            </div><a class="popup-close" data-popup-close="reqPopup" href="#"></a>
+            </div><a class="popup-close" data-popup-close="reqPopup" id="closeButton" href="#"></a>
           </div>
         </div>
         <div class="hero-body">
