@@ -27,6 +27,9 @@
       *::-ms-backdrop, #trusted .trusted__item__desc p::before, #trusted .trusted__item__desc p::after {
         display: none;
       }
+      *::-ms-backdrop, footer .footer__leftSide img {
+        margin-top: -60px;
+      }
     }
     </style>
   </head>
