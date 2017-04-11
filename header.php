@@ -38,6 +38,9 @@
         display: block;
         background-size: cover;
       }
+      *::-ms-backdrop, .IE-alert {
+        display: block;
+      }
     }
     </style>
   </head>

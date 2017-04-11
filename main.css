@@ -14,7 +14,7 @@
     height: 100%;
 }
 .IE-alert {
-    display: block;
+    display: none;
     background: #333;
     width: 100%;
     position: fixed;
