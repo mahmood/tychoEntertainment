@@ -5,6 +5,14 @@
     $three = ['title'=> $settings['who-3-title'], 'description'=> $settings['who-3-des']];
 ?>
 <section id="who-we-are">
+  <div class="who-we-are__overlay">
+    <svg width="1441px" height="715px" viewBox="0 0 1441 715" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs></defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#EA6D32" points="1439.70938 0 1441 251.736027 0.157677812 715 0 0.906114073"></polygon>
+      </g>
+    </svg>
+  </div>
   <div class="container">
     <h2 class="who-we-are__title title">Who We Are</h2>
     <div class="a-man-has-arrow is-hidden-mobile"><i class="icon-logo-orange"></i></div>

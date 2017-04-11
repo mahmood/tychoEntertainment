@@ -30,6 +30,14 @@
       *::-ms-backdrop, footer .footer__leftSide img {
         margin-top: -60px;
       }
+      *::-ms-backdrop, #who-we-are, #who-we-are::after {
+        clip-path: none;
+        background: transparent;
+      }
+      *::-ms-backdrop, .who-we-are__overlay {
+        display: block;
+        background-size: cover;
+      }
     }
     </style>
   </head>
