@@ -19,6 +19,16 @@
     <meta name="description" content="Say Hello :/">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
     <?php wp_head(); ?>
+    <style>
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      *::-ms-backdrop, .hero .services-call {
+        margin-top: -700px;
+      }
+      *::-ms-backdrop, #trusted .trusted__item__desc p::before, #trusted .trusted__item__desc p::after {
+        display: none;
+      }
+    }
+    </style>
   </head>
   <body <?php body_class(); ?>>
     <header class="hero">

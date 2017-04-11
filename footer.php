@@ -38,6 +38,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="<?php echo get_template_directory_uri() ?>/assets/scripts/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri() ?>/assets/scripts/main.js"></script>
+    <script src="<?php echo get_template_directory_uri() ?>/assets/scripts/modernizr-custom.js"></script>
     <?php wp_footer(); ?>
   </body>
 </html>
