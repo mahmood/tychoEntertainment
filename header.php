@@ -42,6 +42,10 @@
     </style>
   </head>
   <body <?php body_class(); ?>>
+    <div class="IE-alert">
+      <span class="IE-alert_toggleBtn"></span>
+      <p>Bro, You use IE Explorer? this is 21Century man, C'Mon you should use modern browsers :)</p>
+    </div>
     <header class="hero">
       <div class="bg__overlay"></div>
       <div class="container is-fluid">

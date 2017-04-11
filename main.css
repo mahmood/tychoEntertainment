@@ -13,3 +13,40 @@
     width: 100%;
     height: 100%;
 }
+.IE-alert {
+    display: block;
+    background: #333;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    color: #FFFFFF;
+    font-size: 1.18rem;
+    text-align: center;
+    padding: .8rem;
+}
+.IE-alert_toggleBtn {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+.IE-alert_toggleBtn::after, .IE-alert_toggleBtn::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: #FFFFFF;
+}
+.IE-alert_toggleBtn::after {
+    top: 1px;
+    transform: rotate(45deg);
+}
+.IE-alert_toggleBtn::before {
+    top: 3px;
+    transform: rotate(-45deg);
+}

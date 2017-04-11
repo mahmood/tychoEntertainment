@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  var $IeAlert = $('.IE-alert');
+  if(localStorage.getItem('dismiss') == 'true') {
+    $IeAlert.hide();
+  } else {
+    $IeAlert.show();
+  }
   // Request Service popup function
   $(function() {
     // Open the popup
@@ -201,6 +207,15 @@ $(document).ready(function(){
         }
       }
     ]
+  });
+  $(function () {
+    var $toggleBtn = $('.IE-alert_toggleBtn');
+    var $IeAlert = $('.IE-alert');
+    $toggleBtn.on('click', function(e) {
+      localStorage.setItem('dismiss', true);
+      $IeAlert.hide();
+      e.preventDefault();
+    });
   });
   $(function () {
     var $hamburger = $(".hamburger");
