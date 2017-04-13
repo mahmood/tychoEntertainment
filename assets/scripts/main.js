@@ -58,7 +58,9 @@ $(document).ready(function(){
     autoplay: true,
     draggable: false,
     swipeToSlide: false,
-    arrows: false,
+    arrows: true,
+    prevArrow:'<button type="button" class="slick-prev"><i class="icon-chevron-left"></i></button>',
+    nextArrow:'<button type="button" class="slick-next"><i class="icon-chevron-right"></i></button>',
     pauseOnHover: false,
     pauseOnFocus: false,
     responsive: [
