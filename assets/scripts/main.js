@@ -56,7 +56,7 @@ $(document).ready(function(){
     // fade: true,
     easing: 'linear',
     slidesToScroll: 1,
-    centerPadding: '0px',
+    centerPadding: '60px',
     slidesToShow: 3,
     autoplay: true,
     draggable: false,
