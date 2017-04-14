@@ -1,9 +1,12 @@
 $(document).ready(function(){
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;
   var $IeAlert = $('.IE-alert');
-  if(localStorage.getItem('dismiss') == 'true') {
-    $IeAlert.hide();
-  } else {
-    $IeAlert.show();
+  if(isIE === true) {
+    if(localStorage.getItem('dismiss') == 'true') {
+      $IeAlert.hide();
+    } else {
+      $IeAlert.show();
+    }
   }
   // Request Service popup function
   $(function() {

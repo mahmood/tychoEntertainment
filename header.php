@@ -38,16 +38,13 @@
         display: block;
         background-size: cover;
       }
-      *::-ms-backdrop, .IE-alert {
-        display: block;
-      }
     }
     </style>
   </head>
   <body <?php body_class(); ?>>
     <div class="IE-alert">
       <span class="IE-alert_toggleBtn"></span>
-      <p>Bro, You use IE Explorer? this is 21Century man, C'Mon you should use modern browsers :)</p>
+      <p>Still using Internet Explorer? Get a safer browser, try Chrome - <a href="https://www.google.com/chrome/">download</a></p>
     </div>
     <header class="hero">
       <div class="bg__overlay"></div>
