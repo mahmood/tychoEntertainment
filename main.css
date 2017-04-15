@@ -66,3 +66,107 @@
 .slick-next {
     right: 32.5%;
 }
+@media print, screen and (max-width: 1190px) {
+    .slick-prev {
+        left: 30.8%;
+    }
+    .slick-next {
+        right: 30.8%;
+    }
+}
+@media print, screen and (max-width: 1080px) {
+    .slick-prev {
+        left: 28.2%;
+    }
+    .slick-next {
+        right: 28.2%;
+    }
+}
+@media print, screen and (max-width: 1050px) {
+    .slick-prev {
+        left: 26.2%;
+    }
+    .slick-next {
+        right: 26.2%;
+    }
+}
+@media print, screen and (max-width: 1000px) {
+    .slick-prev {
+        left: 27.5%;
+    }
+    .slick-next {
+        right: 27.5%;
+    }
+}
+@media print, screen and (max-width: 930px) {
+    .slick-prev {
+        left: 25.5%;
+    }
+    .slick-next {
+        right: 25.5%;
+    }
+}
+@media print, screen and (max-width: 870px) {
+    .slick-prev {
+        left: 22.5%;
+    }
+    .slick-next {
+        right: 22.5%;
+    }
+}
+@media print, screen and (max-width: 770px) {
+    .slick-prev {
+        left: 20.5%;
+    }
+    .slick-next {
+        right: 20.5%;
+    }
+}
+@media print, screen and (max-width: 680px) {
+    .slick-prev {
+        left: 22.5%;
+    }
+    .slick-next {
+        right: 22.5%;
+    }
+}
+@media print, screen and (max-width: 659px) {
+    .slick-prev {
+        left: 20.5%;
+    }
+    .slick-next {
+        right: 20.5%;
+    }
+}
+@media print, screen and (max-width: 579px) {
+    .slick-prev {
+        left: 16.5%;
+    }
+    .slick-next {
+        right: 16.5%;
+    }
+}
+@media print, screen and (max-width: 489px) {
+    .slick-prev {
+        left: 12.5%;
+    }
+    .slick-next {
+        right: 12.5%;
+    }
+}
+@media print, screen and (max-width: 449px) {
+    .slick-prev {
+        left: 9%;
+    }
+    .slick-next {
+        right: 9%;
+    }
+}
+@media print, screen and (max-width: 389px) {
+    .slick-prev {
+        left: 6%;
+    }
+    .slick-next {
+        right: 6%;
+    }
+}
