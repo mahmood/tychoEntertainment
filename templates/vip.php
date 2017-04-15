@@ -9,7 +9,7 @@
         <div class="tile is-ancestor">
           <div class="tile is-3 is-vertical is-parent">
             <div class="tile is-child">
-              <div class="vip__button has-text-centered">Vip Accounts</div>
+              <div class="vip__button has-text-centered">VIP Accounts</div>
             </div>
           </div>
           <div class="tile is-parent">
