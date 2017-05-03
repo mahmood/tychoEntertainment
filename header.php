@@ -87,6 +87,9 @@
         </div>
         <div class="popup" data-popup="reqPopup">
           <div class="popup-inner">
+            <div class="popup-inner_overlay">
+              <i class="icon-logo-white-faded"></i>
+            </div>
             <div class="container">
               <div class="columns">
                 <div class="popup-inner__box column is-half is-offset-3 has-text-centered">
