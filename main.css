@@ -170,3 +170,11 @@
         right: 6%;
     }
 }
+.req-a-bid {
+    margin-top: -1.5rem;
+}
+.req-a-bid .btn__menu {
+    top: 0;
+    left: -.6rem;
+    margin-bottom: .6rem;
+}

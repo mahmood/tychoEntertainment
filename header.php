@@ -136,6 +136,14 @@
         </div>
         <div class="hero-foot">
           <div class="columns has-text-centered">
+            <div class="column req-a-bid">
+              <div class="requestNav mobile-req btn__menu">
+                <i class="icon-circle-plus"></i>
+                <a href="#" data-popup-open="reqPopup">Request a Bid</a>
+              </div>
+            </div>
+          </div>
+          <div class="columns has-text-centered">
             <div class="column">
               <h4 class="title">Learn More</h4>
               <a class="learnMoreBtn"><i class="icon-more"></i></a>
