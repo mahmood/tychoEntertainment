@@ -88,6 +88,9 @@
         </div>
         <div class="popup" data-popup="reqPopup">
           <div class="popup-inner">
+            <div class="popup-inner_overlay">
+              <i class="icon-logo-white-faded"></i>
+            </div>
             <div class="container">
               <div class="columns">
                 <div class="popup-inner__box column is-half is-offset-3 has-text-centered">
@@ -133,6 +136,14 @@
           </div>
         </div>
         <div class="hero-foot">
+          <div class="columns has-text-centered">
+            <div class="column req-a-bid">
+              <div class="requestNav mobile-req btn__menu">
+                <i class="icon-circle-plus"></i>
+                <a href="#" data-popup-open="reqPopup">Request a Bid</a>
+              </div>
+            </div>
+          </div>
           <div class="columns has-text-centered">
             <div class="column">
               <h4 class="title">Learn More</h4>
