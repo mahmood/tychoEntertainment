@@ -3,6 +3,7 @@
     $tel = $settings['tel'];
     $motto = $settings['motto'];
     $services = $settings['services'];
+    $req_form = $settings['req_service'];
  ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -94,7 +95,7 @@
                   <p>Fill out your details below and one of our specialists will get back to you in 1-3 business days.</p>
                   <div class="popup-inner__box__form">
                     <div id="reqServices">
-                    <?= do_shortcode('[contact-form-7 id="64" title="Request-service-ent"]'); ?>
+                    <?= do_shortcode($req_form); ?>
                     </div>
                   </div>
                 </div>

@@ -418,6 +418,23 @@ From bartenders and security to cleaners and hostesses, Tycho Entertainment offe
         )
     ) );
 
+
+    Redux::setSection( $opt_name, array(
+      'title' => __('Form Management', 'redux-framework-demo'),
+      'id'    => 'form-manage',
+      'desc'  => __('Form Management', 'redux-framework-demo'),
+      'icon'  => 'el el-address-book',
+      'fields' => array (
+          array (
+            'id' => 'req_service',
+            'type' => 'text',
+            'section_id' => 'form_service',
+            'title' => 'Request Service form',
+            'subtitle' => 'Enter Request Service shrotcode'
+          )
+      )
+    ));
+
     Redux::setSection( $opt_name, array(
     'title' => __( 'Social', 'redux-framework-demo' ),
     'id'    => 'main_social',
